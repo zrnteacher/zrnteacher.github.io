@@ -13,186 +13,149 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<div id="header">
-				<div class="top">
-                    
-					<!-- Logo -->
-						<div id="logo">
-							<h1 id="title">尚未登入</h1>
-                            <p id="detail"></p>
-                            <br>
-                            <h1 id="money"></h1>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#text" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-                       <div class="actions special" id="someBtn">
-                            <button id="register" onclick="register()" >註冊</button>
-                            <button id="confirm" onclick="login()">登入</button>
-						</div>
-                       <div class="actions special" id="shopping">
-                            <button id="shoppingCar" onclick="settleAccount()">結帳</button>
-						</div>
-                        <input type="hidden" id="activityId">
-				</div>
-
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-
-				</div>
-
-			</div>
-
-		<!-- Main -->
+		    <!-- Header -->
+			
+			
+			
+			<!-- Main -->
 			<div id="main">
-
+		
 				<!-- Intro -->
-					<section id="text" class="one dark cover">
-						<div class="container">
-							<header>
-								<h2 class="alt">合作社午餐訂購系統</h2>
-							</header>
-						</div>
-					</section>
-
+				<section id="text" class="one dark cover">
+					<div class="container">
+						<header>
+							<h2 class="alt">合作社午餐訂購系統</h2>
+						</header>
+						<button onclick="login()">點我驗證</button>
+					</div>
+				</section>
+		
 				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>廠商一</h2>
-							</header>
-
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-                                        <img src="images/pic02.jpg" alt="" />
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-                                        <img src="images/pic03.jpg" alt="" />
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
+				<section id="store1" class="two">
+					<div class="container">
+		
+						<header>
+							<h2>廠商一</h2>
+						</header>
+						<div class="wrapper">
+		
+							<div class="content">
+								<div class="card">
+									<p>Very&nbsp;Nice&nbsp;Book</p>
+									<div class="icon">
+										<div class="icon_bg"></div>
+										<i class="fa fa-shopping-cart"></i>
+									</div>
+									<div class="image">
+										<img src="https://visualhunt.com/photos/t/1/novel-books-page.jpg" alt="book" width="250" />
+									</div>
+									<div class="menu">
+										<div class="price">
+											48元
+										</div>
+										<div class="buy">
+											買起來!
+										</div>
+										<div class="howmany">
+											你想買多少個?
+											<form action="#">
+												<select id="num" onchange="change()">
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+												</select>
+											</form>
+										</div>
+										<div class="cancel">
+											取消
+										</div>
+										<div class="addcart">
+											加到購物車
+										</div>
+									</div>
 								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-                                        <img src="images/pic04.jpg" alt="" />
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-                                        <img src="images/pic05.jpg" alt="" />
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-                                        <img src="images/pic06.jpg" alt="" />
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-                                        <img src="images/pic07.jpg" alt="" />
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
+								<div class="card_back">
+									<i class="fa fa-check fa-4x"></i>
+									<p>Success!</p>
 								</div>
 							</div>
-
 						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-                            <img src="images/pic08.jpg" alt="" />
-
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-
+					</div>
+				</section>
+		
+				<section id="store2" class="two">
+					<div class="container">
+		
+						<header>
+							<h2>廠商二</h2>
+						</header>
+		
+		
+		
+					</div>
+				</section>
+		
+				<section id="store3" class="two">
+					<div class="container">
+		
+						<header>
+							<h2>廠商三</h2>
+						</header>
+		
+		
+		
+		
+		
+					</div>
+				</section>
+		
+		
+		
 			</div>
-
-		<!-- Footer -->
+		
+			<!-- Footer -->
 			<div id="footer">
-
+		
 				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li>
-                        <li>Design: HTML5 UP</li>
-                        <li>Modify: 午餐系統架設團隊</li>
-					</ul>
-
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved.</li>
+					<li>Design: HTML5 UP</li>
+					<li>Modify: 午餐系統架設團隊</li>
+				</ul>
+		
 			</div>
+		<div id="circularMenu1" class="circular-menu circular-menu-left">
+		
+			<a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+			  <i class="fa fa-bars"></i>
+			</a>
+		  
+			<menu class="items-wrapper">
+			  <a href="#text" class="menu-item fa fa-home"></a>
+			  <a class="menu-item fa fa-user" onclick="document.getElementById('profile').style.display='flex';"></a>
+			  <a href="#" class="menu-item fa fa-pie-chart"></a>
+			  <a href="#" class="menu-item fa fa-cog"></a>
+			</menu>
+		  
+		  </div>
+		  
+		  <div class="card2" id="profile">
+			<div class="banner"><svg viewBox="0 0 100 100"></svg></div>
+		
+			<h2 class="name" id="title"></h2>
+			<div class="actions">
+				<div class="follow-info">
+					<p id="detail">dsdssd</p>
+					<p id="money">ffd</p>
+				</div>
+				<div class="follow-btn"><button  onclick="document.getElementById('profile').style.display='none';">關閉我</button></div>
+			</div>
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -203,5 +166,11 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
             <script src="assets-1/js/login.js"></script>
-	</body>
+			<script>
+				var store1 = [0,0,0,0,0];
+				var store2 = [0,0,0,0,0];
+				var store3 = [0,0,0,0,0];
+			</script>
+		</body>
 </html>
+
