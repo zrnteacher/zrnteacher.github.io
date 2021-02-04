@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>嘉義高中合作社點餐系統</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets-1/css/main.css" />
+		<link rel="stylesheet" href="assets-1/css/login.css" />
+		<noscript><link rel="stylesheet" href="assets-1/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<strong><h1>點餐系統登入</h1></strong>
+						</header>
+				        <div class="field">
+				            <input type="text" name="Number" id="Number" placeholder="請輸入學號" onkeypress="Keypress(event)" />
+                            <br>
+				            <input type="password" name="IDnumber" id="IDnumber" placeholder="請輸入身分證字號" onkeypress="Keypress(event)" />
+						</div>
+                        <div class="checkboxPassword">
+                            <input type="checkbox" id="showPassword" onclick="check(checked)" >
+                            <label for="showPassword">顯示身分證字號</label>
+                        </div>
+                        <div class="actions special">
+                            <button id="confirm" onclick="Confirm()">確認</button>
+                            <button id="register" onclick="register()" >註冊帳號</button>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>Design:HTML5 UP | Modify: 午餐系統架設團隊</li>
+						</ul>
+					</footer>
+        </div>
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+                
+                function Keypress(e){
+                    if (e.keyCode == 13 || e.which == 13){
+                        document.getElementById("confirm").click();
+                    }
+                };
+			</script>  
+	</body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="assets-1/js/login.js"></script>
+</html>
