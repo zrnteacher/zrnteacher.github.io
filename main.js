@@ -1,27 +1,29 @@
 const slideData = [
     {
       index: 0,
-      headline: "New Fashion Apparel",
-      button: "Shop now",
-      src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg" },
-    
+      headline: "廠商一",
+      button: "前往購買",
+      src: "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/01/a0001540/img/basic/a0001540_main.jpg" },
     {
       index: 1,
-      headline: "In The Wilderness",
-      button: "Book travel",
-      src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg" },
-    
+      headline: "廠商二",
+      button: "前往購買",
+      src: "https://d1r3ekpbhdi0gp.cloudfront.net/uploads/venue/picture/141/e2216dba4a6354fc.jpg" },
     {
       index: 2,
-      headline: "For Your Current Mood",
-      button: "Listen",
-      src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/guitar.jpg" },
-    
+      headline: "廠商三",
+      button: "前往購買",
+      src: "https://d2b6u3r9.rocketcdn.me/wp-content/uploads/Cafe-Flaneur-at-night-in-Tainan.jpg" },
     {
       index: 3,
-      headline: "Focus On The Writing",
-      button: "Get Focused",
-      src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg" }
+      headline: "廠商四",
+      button: "前往購買",
+      src: "https://www.willflyforfood.net/wp-content/uploads/2018/05/fuhang-soy-milk3.jpg" },
+      {
+        index: 4,
+        headline: "結帳櫃檯",
+        button: "直接去結帳",
+        src: "https://images.fosterwebmarketing.com/thehartlawfirm.com/Hart%20Cashier.jpg" }
     ];
     
     
@@ -92,11 +94,9 @@ const slideData = [
             src: src,
             onLoad: this.imageLoaded })), /*#__PURE__*/
     
-    
-    
           React.createElement("article", { className: "slide__content" }, /*#__PURE__*/
-          React.createElement("h2", { className: "slide__headline" }, headline), /*#__PURE__*/
-          React.createElement("button", { className: "slide__action btn" }, button))));
+          React.createElement("h2", { className: "slide__headline"  }, headline), /*#__PURE__*/
+          React.createElement("a", { className: "slide__action btn" }, button))));
     
     
     
